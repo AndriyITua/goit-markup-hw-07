@@ -18,25 +18,25 @@
 
 <body>
     <!-- Шапка сторінки -->
-    <header class="page-header header">
+    <header class="page-header">
         <div class="container">
         <!-- Основна навігація -->
         <div class="header-style">
         <nav class="header-nav">
-            <a href="index.html" class="webstudio"><span class="webstudio-color">Web</span>Studio</a>
+            <a href="index.html" class="page-header__webstudio"><span class="webstudio-color">Web</span>Studio</a>
             <ul class="header-list">
-                <li class="header-item"><a href="./index.html" class="item current">Студия</a></li>
-                <li class="header-item"><a href="./portfolio.html" class="item">Портфолио</a></li>
-                <li class="header-item"><a href="" class="item">Контакты</a></li>
+                <li class="header-list__item"><a href="./index.html" class="header-list__link current">Студия</a></li>
+                <li class="header-list__item"><a href="./portfolio.html" class="header-list__link">Портфолио</a></li>
+                <li class="header-list__item"><a href="" class="header-list__link">Контакты</a></li>
             </ul>
         </nav>  
         <ul class="header-right">
-            <li class="tel-style"> 
-                <a href="mailto:info@devstudio.com" class="header-tel">
+            <li class="header-right__tel"> 
+                <a class="header-tel" href="mailto:info@devstudio.com">
                     <svg class="smartphone-icon" width='16' height='12'><use href="./images/icons.svg#icon-email"></use></svg> info@devstudio.com</a>
             </li>
-            <li class="tel-style">
-                <a href="tel:+380961111111" class="header-tel">
+            <li class="header-right__tel">
+                <a class="header-tel" href="tel:+380961111111">
                     <svg class="smartphone-icon" width='10' height='16'><use href="./images/icons.svg#icon-phone"></use></svg> +38 096 111 11 11</a>
             </li>
         </ul>
@@ -48,7 +48,7 @@
         <!-- Section 1 -->
         <section class="first-section first-section-style">
             <div class="container">
-            <h1 class="title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+            <h1 class="first-section__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
             <button data-modal-open type="button" class="btn pointer">Заказать услугу</button>
             <div data-modal class="backdrop is-hidden">
                 <div class="modal">
@@ -111,27 +111,27 @@
         <!-- Section 2 -->
         <section class="second-section">
             <div class="container">
-            <h2 hidden class="features">Особенности</h2>
-            <ul class="second-list">
-                <li class="second-list-item">
-                    <div class="thumb"><svg class="smartphone-icon" width='70' height='70'><use href="./images/icons.svg#icon-antenna"></use></svg></div>
-                    <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                    <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <h2 hidden>Особенности</h2>
+            <ul class="second-section-list">
+                <li class="second-section-list__item">
+                    <div class="second-section-list__thumb"><svg class="smartphone-icon" width='70' height='70'><use href="./images/icons.svg#icon-antenna"></use></svg></div>
+                    <h3 class="second-section-list__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                    <p class="second-section-list__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li class="second-list-item">
-                    <div class="thumb"><svg class="smartphone-icon" width='70' height='70'><use href="./images/icons.svg#icon-clock"></use></svg></div>
-                    <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
-                    <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <li class="second-section-list__item">
+                    <div class="second-section-list__thumb"><svg class="smartphone-icon" width='70' height='70'><use href="./images/icons.svg#icon-clock"></use></svg></div>
+                    <h3 class="second-section-list__title">ПУНКТУАЛЬНОСТЬ</h3>
+                    <p class="second-section-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li class="second-list-item">
-                    <div class="thumb"><svg class="smartphone-icon" width='70' height='70'><use href="./images/icons.svg#icon-diagram"></use></svg></div>
-                    <h3 class="title">ПЛАНИРОВАНИЕ</h3>
-                    <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <li class="second-section-list__item">
+                    <div class="second-section-list__thumb"><svg class="smartphone-icon" width='70' height='70'><use href="./images/icons.svg#icon-diagram"></use></svg></div>
+                    <h3 class="second-section-list__title">ПЛАНИРОВАНИЕ</h3>
+                    <p class="second-section-list__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li class="second-list-item">
-                    <div class="thumb"><svg class="smartphone-icon" width='70' height='70'><use href="./images/icons.svg#icon-astronaut"></use></svg></div>
-                    <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-                    <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <li class="second-section-list__item">
+                    <div class="second-section-list__thumb"><svg class="smartphone-icon" width='70' height='70'><use href="./images/icons.svg#icon-astronaut"></use></svg></div>
+                    <h3 class="second-section-list__title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+                    <p class="second-section-list__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
             </div>
@@ -266,7 +266,7 @@
     <footer class="page-footer">
         <div class="container footer">
             <div class="footer-left">
-        <a href="./index.html" class="webstudio"><span class="webstudio-color">Web</span>Studio</a>
+        <a href="./index.html" class="page-footer__webstudio"><span class="webstudio-color">Web</span>Studio</a>
         <address class="street">
             г. Киев, пр-т Леси Украинки, 26 <br>
             <a href="mailto:info@example.com" class="footer-tel">info@example.com</a> <br>
