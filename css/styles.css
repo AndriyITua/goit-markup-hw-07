@@ -10,7 +10,7 @@
   --cubik-transform: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body {
+/* body {
   font-family: "Roboto", sans-serif;
   color: var(--title-text-color);
   font-style: normal;
@@ -27,17 +27,16 @@ img {
   width: 1200px;
   margin: 0 auto;
   outline: 1px solid tomato;
-}
+} */
 
 /* Шапка сторінки studio */
 
-.page-header {
+/* .page-header {
   background-color: var(--secondary-text-color);
   border-bottom: 1px solid #ececec;
 }
 
-.page-header__logo,
-.left-part__link {
+.page-header__logo {
   color: var(--title-text-color);
   font-family: "Raleway", serif;
   font-style: normal;
@@ -190,7 +189,7 @@ img {
   display: flex;
   align-items: center;
   margin-right: 10px;
-}
+} */
 
 /* Унікальність сторінки studio*/
 
@@ -933,6 +932,15 @@ img {
 .left-part__link {
   color: var(--secondary-text-color);
 
+  font-family: "Raleway", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  width: 145px;
+
   display: inline-block;
   margin-top: 0px;
   margin-bottom: 20px;
@@ -1107,45 +1115,45 @@ img {
 
 /* Шапка сторінки portfolio */
 
-.header-nav-portfolio {
+/* .header-nav-portfolio {
   display: flex;
   align-items: center;
 
   position: relative;
-}
+} */
 
-.page-header__logo {
+/* .page-header__logo {
   display: block;
   margin-right: auto;
   margin-top: 24px;
   margin-bottom: 25px;
-}
+} */
 
-.page-header .page-header-list {
+/* .page-header .page-header-list {
   display: flex;
   padding-left: 93px;
   margin-top: 0px;
   margin-bottom: 0px;
-}
+} */
 
-.page-header .header-list__link {
+/* .page-header .header-list__link {
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
 
   transition: var(--time-animation) var(--cubik-transform);
-}
+} */
 
-.header-style {
+/* .header-style {
   display: flex;
   align-items: center;
-}
+} */
 
-.page-header-list__item-portfolio:not(:last-child) {
+/* .page-header-list__item-portfolio:not(:last-child) {
   margin-right: 50px;
-}
+} */
 
-.page-header-list__item-portfolio .current::after {
+/* .page-header-list__item-portfolio .current::after {
   position: absolute;
   bottom: 0px;
   content: "";
@@ -1154,22 +1162,22 @@ img {
   background-color: var(--blue-text-color);
   border-radius: 4px;
   margin-top: 28px;
-}
+} */
 
-.header-right-list {
+/* .header-right-list {
   display: flex;
   align-items: center;
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-}
+} */
 
-.header-right__item-portfolio {
+/* .header-right__item-portfolio {
   margin-right: 30px;
-}
+} */
 
-.header-right__link {
+/* .header-right__link {
   display: flex;
   align-items: center;
   padding-top: 20px;
@@ -1177,31 +1185,31 @@ img {
   fill: var(--primary-text-color);
 
   transition: var(--time-animation) var(--cubik-transform);
-}
+} */
 
-.header-right__link:hover,
+/* .header-right__link:hover,
 .header-right__link:focus {
   fill: var(--blue-text-color);
 
   transition: fill var(--time-animation) var(--cubik-transform);
-}
+} */
 
-.header-right__item-portfolio:last-child {
+/* .header-right__item-portfolio:last-child {
   margin-right: 0;
-}
+} */
 
-.header-right__icon-portfolio {
+/* .header-right__icon-portfolio {
   display: flex;
   align-items: center;
   margin-right: 10px;
-}
+} */
 
-.header-right__item-portfolio:hover,
+/* .header-right__item-portfolio:hover,
 .header-right__item-portfolio:focus {
   fill: var(--blue-text-color);
 
   transition: fill var(--time-animation) var(--cubik-transform);
-}
+} */
 
 /* Унікальність сторінки portfolio */
 
@@ -1391,7 +1399,19 @@ img {
 }
 
 .left-part__link {
+  color: var(--secondary-text-color);
+
+  font-family: "Raleway", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  width: 145px;
+
   display: inline-block;
+  margin-top: 0px;
   margin-bottom: 20px;
   margin-right: 0;
   margin-left: 0;
