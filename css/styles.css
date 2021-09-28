@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --blue-text-color: #2196f3;
   --title-text-color: #212121;
   --secondary-text-color: #ffffff;
@@ -8,7 +8,7 @@
   --background-color-footer: #2f303a;
   --time-animation: 250ms;
   --cubik-transform: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* body {
   font-family: "Roboto", sans-serif;
@@ -193,7 +193,7 @@ img {
 
 /* Унікальність сторінки studio*/
 
-.first-section {
+/* .first-section {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -259,11 +259,11 @@ img {
 
 .pointer {
   cursor: pointer;
-}
+} */
 
 /* МОДАЛЬНЕ ВІКНО */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -550,7 +550,7 @@ img {
 
 .backdrop.is-hidden {
   opacity: 0;
-  /* visibility: hidden; */
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -563,9 +563,9 @@ img {
   transition: background-color var(--time-animation) var(--cubik-transform),
     color var(--time-animation) var(--cubik-transform),
     border var(--time-animation) var(--cubik-transform);
-}
+} */
 
-.second-section {
+/* .second-section {
   background-color: var(--secondary-text-color);
   margin-top: 0px;
   margin-bottom: 0px;
@@ -633,9 +633,9 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
+} */
 
-.third-section-list {
+/* .third-section-list {
   list-style: none;
   display: flex;
   margin-top: 0;
@@ -701,9 +701,9 @@ img {
 
 .third-section-list__item:nth-child(3n) {
   margin-right: 0;
-}
+} */
 
-.four-section {
+/* .four-section {
   background-color: var(--color-four-section);
   margin-bottom: 0px;
   padding-bottom: 94px;
@@ -845,9 +845,9 @@ img {
   background-color: var(--blue-text-color);
 
   transition: background-color var(--time-animation) var(--cubik-transform);
-}
+} */
 
-.five-section {
+/* .five-section {
   margin-bottom: 0px;
   padding-bottom: 94px;
   padding-top: 94px;
@@ -919,7 +919,7 @@ img {
   fill: var(--blue-text-color);
 
   transition: fill var(--time-animation) var(--cubik-transform);
-}
+} */
 
 /* Підвал сторінки studio*/
 
@@ -1391,7 +1391,7 @@ img {
 
 /* Підвал сторінки portfolio*/
 
-.page-footer-location__link {
+/* .page-footer-location__link {
   color: var(--support-text-color);
   text-decoration: none;
 
@@ -1428,4 +1428,4 @@ img {
 
 .page-footer__left-part {
   margin-right: 70px;
-}
+} */
