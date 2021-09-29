@@ -53,6 +53,11 @@
   text-decoration: none;
 
   transition: var(--time-animation) var(--cubik-transform);
+  &:hover,
+  &:focus {
+    color: var(--blue-text-color);
+    transition: color var(--time-animation) var(--cubik-transform);
+  }
 }
 
 .page-footer__center-part {
@@ -88,10 +93,9 @@
 
 .center-part__item {
   margin-right: 10px;
-}
-
-.center-part__item:nth-child(4n) {
-  margin-right: 0;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
 }
 
 .center-part__link {
@@ -104,20 +108,12 @@
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: var(--time-animation) var(--cubik-transform);
-}
 
-.center-part__link:hover,
-.center-part__link:focus {
-  background-color: var(--blue-text-color);
-
-  transition: background-color var(--time-animation) var(--cubik-transform);
-}
-
-.center-part__link:hover .social-list__icon,
-.center-part__link:focus .social-list__icon {
-  fill: #fff;
-
-  transition: fill var(--time-animation) var(--cubik-transform);
+  &:hover,
+  &:focus {
+    background-color: var(--blue-text-color);
+    transition: background-color var(--time-animation) var(--cubik-transform);
+  }
 }
 
 .center-part__icon {

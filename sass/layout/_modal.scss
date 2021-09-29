@@ -20,10 +20,12 @@
   transform: scale(0.8);
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  /* visibility: hidden; */
-  pointer-events: none;
+.backdrop {
+  &.is-hidden {
+    opacity: 0;
+    /* visibility: hidden; */
+    pointer-events: none;
+  }
 }
 
 .modal {
@@ -60,14 +62,12 @@
 
 .modal__close-icon {
   transition: var(--time-animation) var(--cubik-transform);
-}
-
-.modal__close-icon:hover,
-.modal__close-icon:focus {
-  fill: var(--blue-text-color);
-
-  cursor: pointer;
-  transition: fill var(--time-animation) var(--cubik-transform);
+  &:hover,
+  &:focus {
+    fill: var(--blue-text-color);
+    cursor: pointer;
+    transition: fill var(--time-animation) var(--cubik-transform);
+  }
 }
 
 .form {
@@ -122,14 +122,13 @@
   padding: 11px 42px;
 
   transition: var(--time-animation) var(--cubik-transform);
-}
-
-.form-field__input:hover,
-.form-field__input:focus {
-  border-color: var(--blue-text-color);
-  outline: none;
-  cursor: pointer;
-  transition: border-color var(--time-animation) var(--cubik-transform);
+  &:hover,
+  &:focus {
+    border-color: var(--blue-text-color);
+    outline: none;
+    cursor: pointer;
+    transition: border-color var(--time-animation) var(--cubik-transform);
+  }
 }
 
 .form-field__icon {
@@ -140,21 +139,17 @@
   margin-left: 12px;
 
   transition: var(--time-animation) var(--cubik-transform);
-}
-
-.form-field__icon:hover,
-.form-field__icon:focus {
-  fill: var(--blue-text-color);
-  cursor: pointer;
-
-  transition: fill var(--time-animation) var(--cubik-transform);
-}
-
-.form-field__input:hover + .form-field__icon,
-.form-field__input:focus + .form-field__icon {
-  fill: var(--blue-text-color);
-
-  transition: fill var(--time-animation) var(--cubik-transform);
+  &:hover,
+  &:focus {
+    fill: var(--blue-text-color);
+    cursor: pointer;
+    transition: fill var(--time-animation) var(--cubik-transform);
+  }
+  .form-field__input:hover + &,
+  .form-field__input:focus + & {
+    fill: var(--blue-text-color);
+    transition: fill var(--time-animation) var(--cubik-transform);
+  }
 }
 
 .form-field__textarea {
@@ -167,26 +162,25 @@
   border-radius: 4px;
 
   transition: var(--time-animation) var(--cubik-transform);
+  &:hover,
+  &:focus {
+    border-color: var(--blue-text-color);
+    outline: none;
+    cursor: pointer;
+    transition: border-color var(--time-animation) var(--cubik-transform);
+  }
 }
 
-.form-field__textarea:hover,
-.form-field__textarea:focus {
-  border-color: var(--blue-text-color);
-  outline: none;
-  cursor: pointer;
-
-  transition: border-color var(--time-animation) var(--cubik-transform);
-}
-
-.form-field textarea::placeholder {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
+.form-field textarea {
+  &::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .form-checkbox {
@@ -232,14 +226,16 @@
   position: relative;
 }
 
-.form-checkbox__input:checked + .form-checkbox__icon-border {
-  border-color: transparent;
-  background-color: var(--blue-text-color);
-  background-image: url("../images/check.svg");
-  background-size: contain;
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  background-position: 0% 50%;
+.form-checkbox__input {
+  &:checked + .form-checkbox__icon-border {
+    border-color: transparent;
+    background-color: var(--blue-text-color);
+    background-image: url("../images/check.svg");
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+  }
 }
 
 .form-checkbox__contract-link {
@@ -252,11 +248,11 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-left: 4px;
-}
 
-.form-checkbox__contract-link:hover,
-.form-checkbox__contract-link:focus {
-  color: var(--blue-text-color);
+  &:hover,
+  &:focus {
+    color: var(--blue-text-color);
+  }
 }
 
 .form-button {

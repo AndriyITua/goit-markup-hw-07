@@ -95,8 +95,7 @@ img {
   margin-right: 0;
 }
 
-.header-right__item:hover,
-.header-right__item:focus {
+.header-right__item:hover, .header-right__item:focus {
   fill: var(--blue-text-color);
   transition: fill var(--time-animation) var(--cubik-transform);
 }
@@ -116,8 +115,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-.header-list__link:hover,
-.header-list__link:focus {
+.header-list__link:hover, .header-list__link:focus {
   color: var(--blue-text-color);
   transition: color var(--time-animation) var(--cubik-transform);
 }
@@ -161,10 +159,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-.header-right__link:hover,
-.header-right__link:focus,
-.page-footer-location__link:hover,
-.page-footer-location__link:focus {
+.header-right__link:hover, .header-right__link:focus {
   color: var(--blue-text-color);
   transition: color var(--time-animation) var(--cubik-transform);
 }
@@ -178,8 +173,7 @@ img {
   transition: var(--time-animation) var(--cubik-transform);
 }
 
-.header-right__link:hover,
-.header-right__link:focus {
+.header-right__link:hover, .header-right__link:focus {
   fill: var(--blue-text-color);
   transition: fill var(--time-animation) var(--cubik-transform);
 }
@@ -308,8 +302,7 @@ img {
   transition: var(--time-animation) var(--cubik-transform);
 }
 
-.modal__close-icon:hover,
-.modal__close-icon:focus {
+.modal__close-icon:hover, .modal__close-icon:focus {
   fill: var(--blue-text-color);
   cursor: pointer;
   transition: fill var(--time-animation) var(--cubik-transform);
@@ -363,8 +356,7 @@ img {
   transition: var(--time-animation) var(--cubik-transform);
 }
 
-.form-field__input:hover,
-.form-field__input:focus {
+.form-field__input:hover, .form-field__input:focus {
   border-color: var(--blue-text-color);
   outline: none;
   cursor: pointer;
@@ -380,8 +372,7 @@ img {
   transition: var(--time-animation) var(--cubik-transform);
 }
 
-.form-field__icon:hover,
-.form-field__icon:focus {
+.form-field__icon:hover, .form-field__icon:focus {
   fill: var(--blue-text-color);
   cursor: pointer;
   transition: fill var(--time-animation) var(--cubik-transform);
@@ -403,8 +394,7 @@ img {
   transition: var(--time-animation) var(--cubik-transform);
 }
 
-.form-field__textarea:hover,
-.form-field__textarea:focus {
+.form-field__textarea:hover, .form-field__textarea:focus {
   border-color: var(--blue-text-color);
   outline: none;
   cursor: pointer;
@@ -484,8 +474,7 @@ img {
   margin-left: 4px;
 }
 
-.form-checkbox__contract-link:hover,
-.form-checkbox__contract-link:focus {
+.form-checkbox__contract-link:hover, .form-checkbox__contract-link:focus {
   color: var(--blue-text-color);
 }
 
@@ -773,6 +762,12 @@ img {
   fill: #fff;
 }
 
+.center-part__link:hover .social-list__icon,
+.center-part__link:focus .social-list__icon {
+  fill: #fff;
+  transition: fill var(--time-animation) var(--cubik-transform);
+}
+
 .five-section {
   margin-bottom: 0px;
   padding-bottom: 94px;
@@ -894,6 +889,11 @@ img {
   transition: var(--time-animation) var(--cubik-transform);
 }
 
+.page-footer-location__link:hover, .page-footer-location__link:focus {
+  color: var(--blue-text-color);
+  transition: color var(--time-animation) var(--cubik-transform);
+}
+
 .page-footer__center-part {
   align-items: center;
   justify-content: center;
@@ -942,16 +942,9 @@ img {
   transition: var(--time-animation) var(--cubik-transform);
 }
 
-.center-part__link:hover,
-.center-part__link:focus {
+.center-part__link:hover, .center-part__link:focus {
   background-color: var(--blue-text-color);
   transition: background-color var(--time-animation) var(--cubik-transform);
-}
-
-.center-part__link:hover .social-list__icon,
-.center-part__link:focus .social-list__icon {
-  fill: #fff;
-  transition: fill var(--time-animation) var(--cubik-transform);
 }
 
 .center-part__icon {
@@ -1068,14 +1061,12 @@ img {
   transition: var(--time-animation) var(--cubik-transform);
 }
 
-.first-section-portfolio-list__btn:hover,
-.first-section-portfolio-list__btn:focus {
+.first-section-portfolio-list__btn:hover, .first-section-portfolio-list__btn:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   transition: box-shadow var(--time-animation) var(--cubik-transform);
 }
 
-.first-section-portfolio-list__btn:hover,
-.first-section-portfolio-list__btn:focus {
+.first-section-portfolio-list__btn:hover, .first-section-portfolio-list__btn:focus {
   color: var(--secondary-text-color);
   background-color: var(--blue-text-color);
   transition: background-color var(--time-animation) var(--cubik-transform);
@@ -1100,8 +1091,7 @@ img {
   margin-bottom: 30px;
 }
 
-.portfolio-second-list__item:hover,
-.portfolio-second-list__item:focus {
+.portfolio-second-list__item:hover, .portfolio-second-list__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   transition: box-shadow var(--time-animation) var(--cubik-transform);
@@ -1128,6 +1118,11 @@ img {
   height: 100%;
 }
 
+.portfolio-second-list__item:hover .portfolio-second-list__thumb::before {
+  transform: translateY(0%);
+  transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portfolio-second-list__text-thumb {
   position: absolute;
   top: 0;
@@ -1148,7 +1143,6 @@ img {
   transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-second-list__item:hover .portfolio-second-list__thumb::before,
 .portfolio-second-list__item:hover .portfolio-second-list__text-thumb {
   transform: translateY(0%);
   transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -40,33 +40,25 @@
   border-radius: 4px;
   padding: 16px 32px;
   display: flex;
-
   transition: var(--time-animation) var(--cubik-transform);
-}
-
-.five-section-list__link:hover {
-  border-color: var(--blue-text-color);
-
-  transition: border-color var(--time-animation) var(--cubik-transform);
+  &:hover {
+    border-color: var(--blue-text-color);
+    transition: border-color var(--time-animation) var(--cubik-transform);
+  }
 }
 
 .five-section-list__icon {
   display: flex;
   fill: #afb1b8;
-
   transition: var(--time-animation) var(--cubik-transform);
-}
-
-.five-section-list__icon:hover {
-  fill: var(--blue-text-color);
-  cursor: pointer;
-
-  transition: fill var(--time-animation) var(--cubik-transform);
-}
-
-.five-section-list__link:hover .five-section-list__icon,
-.five-section-list__link:focus .five-section-list__icon {
-  fill: var(--blue-text-color);
-
-  transition: fill var(--time-animation) var(--cubik-transform);
+  &:hover {
+    fill: var(--blue-text-color);
+    cursor: pointer;
+    transition: fill var(--time-animation) var(--cubik-transform);
+  }
+  .five-section-list__link:hover &,
+  .five-section-list__link:focus & {
+    fill: var(--blue-text-color);
+    transition: fill var(--time-animation) var(--cubik-transform);
+  }
 }

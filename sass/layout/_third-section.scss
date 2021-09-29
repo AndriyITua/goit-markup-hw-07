@@ -38,10 +38,10 @@
   justify-content: center;
 
   z-index: 1;
-}
 
-.third-section-list__item:nth-child(3n) {
-  margin-right: 0;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .third-section-list__text {

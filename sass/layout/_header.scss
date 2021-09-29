@@ -45,8 +45,10 @@
   margin-bottom: 0px;
 }
 
-.page-header-list__item:not(:last-child) {
-  margin-right: 50px;
+.page-header-list__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .header-right-list {
@@ -61,17 +63,14 @@
 
 .header-right__item {
   margin-right: 30px;
-}
-
-.header-right__item:last-child {
-  margin-right: 0;
-}
-
-.header-right__item:hover,
-.header-right__item:focus {
-  fill: var(--blue-text-color);
-
-  transition: fill var(--time-animation) var(--cubik-transform);
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover,
+  &:focus {
+    fill: var(--blue-text-color);
+    transition: fill var(--time-animation) var(--cubik-transform);
+  }
 }
 
 .header-list__link {
@@ -89,13 +88,12 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
 
-.header-list__link:hover,
-.header-list__link:focus {
-  color: var(--blue-text-color);
-
-  transition: color var(--time-animation) var(--cubik-transform);
+  &:hover,
+  &:focus {
+    color: var(--blue-text-color);
+    transition: color var(--time-animation) var(--cubik-transform);
+  }
 }
 
 .page-header .current {
@@ -135,15 +133,11 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.header-right__link:hover,
-.header-right__link:focus,
-.page-footer-location__link:hover,
-.page-footer-location__link:focus {
-  color: var(--blue-text-color);
-
-  transition: color var(--time-animation) var(--cubik-transform);
+  &:hover,
+  &:focus {
+    color: var(--blue-text-color);
+    transition: color var(--time-animation) var(--cubik-transform);
+  }
 }
 
 .header-right__link {
@@ -154,13 +148,11 @@
   fill: var(--primary-text-color);
 
   transition: var(--time-animation) var(--cubik-transform);
-}
-
-.header-right__link:hover,
-.header-right__link:focus {
-  fill: var(--blue-text-color);
-
-  transition: fill var(--time-animation) var(--cubik-transform);
+  &:hover,
+  &:focus {
+    fill: var(--blue-text-color);
+    transition: fill var(--time-animation) var(--cubik-transform);
+  }
 }
 
 .header-right__icon {

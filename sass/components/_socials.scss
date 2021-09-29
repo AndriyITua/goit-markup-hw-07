@@ -51,4 +51,9 @@
   .social-list__link:focus & {
     fill: #fff;
   }
+  .center-part__link:hover &,
+  .center-part__link:focus & {
+    fill: #fff;
+    transition: fill var(--time-animation) var(--cubik-transform);
+  }
 }
