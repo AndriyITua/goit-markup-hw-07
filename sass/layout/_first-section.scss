@@ -14,7 +14,7 @@
   background-position: center;
 }
 
-.first-section .first-section__title {
+.first-section__title {
   color: var(--secondary-text-color);
   font-family: "Roboto";
   font-style: normal;
@@ -55,17 +55,16 @@
   border: none;
 
   transition: var(--time-animation) var(--cubik-transform);
-}
 
-.first-section__btn:hover,
-.first-section__btn:focus {
-  color: var(--blue-text-color);
-  background-color: var(--secondary-text-color);
-  border: none;
-
-  transition: background-color var(--time-animation) var(--cubik-transform),
-    color var(--time-animation) var(--cubik-transform),
-    border var(--time-animation) var(--cubik-transform);
+  &:hover,
+  &:focus {
+    color: var(--blue-text-color);
+    background-color: var(--secondary-text-color);
+    border: none;
+    transition: background-color var(--time-animation) var(--cubik-transform),
+      color var(--time-animation) var(--cubik-transform),
+      border var(--time-animation) var(--cubik-transform);
+  }
 }
 
 .pointer {

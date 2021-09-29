@@ -202,7 +202,7 @@ img {
   background-position: center;
 }
 
-.first-section .first-section__title {
+.first-section__title {
   color: var(--secondary-text-color);
   font-family: "Roboto";
   font-style: normal;
@@ -241,8 +241,7 @@ img {
   transition: var(--time-animation) var(--cubik-transform);
 }
 
-.first-section__btn:hover,
-.first-section__btn:focus {
+.first-section__btn:hover, .first-section__btn:focus {
   color: var(--blue-text-color);
   background-color: var(--secondary-text-color);
   border: none;
@@ -754,8 +753,7 @@ img {
   transition: var(--time-animation) var(--cubik-transform);
 }
 
-.social-list__link:hover,
-.social-list__link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--blue-text-color);
   transition: background-color var(--time-animation) var(--cubik-transform);
 }
